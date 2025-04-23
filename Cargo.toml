@@ -12,8 +12,8 @@ categories = ["data-structures", "no-std"]
 keywords = ["phf", "const"]
 
 [dependencies]
-const-siphasher = "1.0.2"
-arrayvec-const = "0.7"
+const-siphasher = { version = "1.0.2", default-features = false }
+arrayvec-const = { version = "0.7", default-features = false }
 sort-const = "1.0.1"
 const_panic = "0.2.12"
 
@@ -21,4 +21,6 @@ const_panic = "0.2.12"
 github = { repository = "Daniel-Aaron-Bloom/cphf-rs", workflow = "CI" }
 
 [features]
+default = ["std"]
+std = ["const-siphasher/std", "arrayvec-const/std"]
 list = []
