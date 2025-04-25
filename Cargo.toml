@@ -13,7 +13,7 @@ keywords = ["phf", "const"]
 
 [dependencies]
 const-siphasher = { version = "1.0.2", default-features = false }
-arrayvec-const = { version = "0.7", default-features = false }
+arrayvec-const = { git = "https://github.com/GreenCappuccino/arrayvec-const-fork", rev = "7ebfed90496085a2ad2091191607278457a4741b", default-features = false }
 sort-const = "1.0.1"
 const_panic = "0.2.12"
 
