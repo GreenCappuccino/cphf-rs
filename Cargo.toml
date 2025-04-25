@@ -14,7 +14,7 @@ keywords = ["phf", "const"]
 [dependencies]
 const-siphasher = { version = "1.0.2", default-features = false }
 arrayvec-const = { version = "0.7.7", default-features = false }
-sort-const = { version = "1.0.1", default-features = false }
+sort-const = { git = "https://github.com/GreenCappuccino/sort-const-rs-fork", rev = "7fb92a5b790112295f07fc1a9e5a8711980d7ffc", default-features = false }
 const_panic = "0.2.12"
 
 [badges]
