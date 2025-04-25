@@ -23,4 +23,3 @@ github = { repository = "Daniel-Aaron-Bloom/cphf-rs", workflow = "CI" }
 [features]
 default = ["std"]
 std = ["const-siphasher/std", "arrayvec-const/std"]
-list = []
