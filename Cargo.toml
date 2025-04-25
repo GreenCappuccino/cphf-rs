@@ -13,8 +13,8 @@ keywords = ["phf", "const"]
 
 [dependencies]
 const-siphasher = { version = "1.0.2", default-features = false }
-arrayvec-const = { git = "https://github.com/GreenCappuccino/arrayvec-const-fork", rev = "7ebfed90496085a2ad2091191607278457a4741b", default-features = false }
-sort-const = "1.0.1"
+arrayvec-const = { version = "0.7.7", default-features = false }
+sort-const = { version = "1.0.1", default-features = false }
 const_panic = "0.2.12"
 
 [badges]
@@ -22,4 +22,4 @@ github = { repository = "Daniel-Aaron-Bloom/cphf-rs", workflow = "CI" }
 
 [features]
 default = ["std"]
-std = ["const-siphasher/std", "arrayvec-const/std"]
+std = ["const-siphasher/std", "arrayvec-const/std", "sort-const/std"]
